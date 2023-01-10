@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Encriptador</title>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Container-->
+    <div class="container">
+      <!-- Header-->
+      <header>
+        <!-- Logo -->
+        <div>
+          <img src="./imagenes/Logo.svg" alt="logo alura" srcset="" />
+        </div>
+      </header>
+
+      <!-- Main -->
+      <main>
+        <!-- Text input / entrada de texto -->
+        <section class="main--text-input">
+          <!-- Cuadro de captura de texto-->
+          <textarea
+            id="txt-entrada"
+            autofocus
+            placeholder="Ingrese el texto aqui"
+          ></textarea>
+
+          <!--  Error al no ser solo minusculas-->
+          <span id="error" class="oculta"
+            >Ingrese solo minusculas sin acentos!</span
+          >
+        </section>
+
+        <!-- Buttons -->
+        <section class="main--buttons">
+          <div class="buttons">
+            <!-- Boton para ejecutar funcion encriptar()-->
+            <button id="btn-encriptar">
+              <img src="./imagenes/lock-fill.svg" alt="lock" class="img" />
+              Encriptar
+            </button>
+            <!-- Boton para ejecutar funcion desencriptar()-->
+
+            <button id="btn-desencriptar">
+              <img src="./imagenes/unlock-fill.svg" alt="unlock" class="img" />
+              Desencriptar
+            </button>
+          </div>
+        </section>
+
+        <!-- Text transforms / salida de resultados-->
+        <section class="main--text-transforms">
+          <!-- Agrega muneco y mensajes iniciales-->
+          <div class="emptymessage" id="emptymessage">
+            <img src="./imagenes/Muneco.svg" alt="" srcset="" />
+
+            <span>
+              Ningún mensaje fue encontrado
+            </span>
+
+            <p>
+              Ingresa el texto que desees encriptar o desencriptar.
+            </p>
+          </div>
+
+          <!-- Salida de resultado-->
+          <div id="txt-salida"></div>
+
+          <!-- Boton de copiar texto-->
+          <button id="btn-copiar">
+            <img src="./imagenes/files.svg" alt="clipboard" class="img" />
+            Copiar
+          </button>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      <section>
+        <a
+          href="https://github.com/ksosar"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="./imagenes/github.svg" alt="github" srcset="" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/karlo-sosa-653038225/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src="./imagenes/linkedin.svg" alt="github" srcset="" />
+        </a>
+      </section>
+
+      <p>Karlo Gonzalo Sosa Rivas</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
